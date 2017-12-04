@@ -9,7 +9,7 @@
 			<property name="hibernate.show_sql" value="true"/>
 			<property name="hibernate.format_sql" value="true"/>
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
-			<property name="javax.persistence.jdbc.url" value="jdbc:mysql:https://www.sql10.freemysqlhosting.net:3306/sql10208877"/>
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://www.sql10.freemysqlhosting.net:3306/sql10208877"/>
 			<property name="javax.persistence.jdbc.user" value="sql10208877"/>
 			<property name="javax.persistence.jdbc.password" value="easupM8rTG"/>          	
           </properties>
@@ -23,7 +23,7 @@
 			<property name="hibernate.show_sql" value="true"/>
 			<property name="hibernate.format_sql" value="true"/>
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
-			<property name="javax.persistence.jdbc.url" value="jdbc:mysql:https://www.sql10.freemysqlhosting.net:3306/sql10208877"/>
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://www.sql10.freemysqlhosting.net:3306/sql10208877"/>
 			<property name="javax.persistence.jdbc.user" value="sql10208877"/>
 			<property name="javax.persistence.jdbc.password" value="easupM8rTG"/>          	
           </properties>
@@ -37,7 +37,7 @@
 			<property name="hibernate.show_sql" value="true"/>
 			<property name="hibernate.format_sql" value="true"/>
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
-			<property name="javax.persistence.jdbc.url" value="jdbc:mysql:https://www.sql10.freemysqlhosting.net:3306/sql10208877"/>
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://www.sql10.freemysqlhosting.net:3306/sql10208877"/>
 			<property name="javax.persistence.jdbc.user" value="sql10208877"/>
 			<property name="javax.persistence.jdbc.password" value="easupM8rTG"/>          	
           </properties>
@@ -51,7 +51,7 @@
 			<property name="hibernate.show_sql" value="true"/>
 			<property name="hibernate.format_sql" value="true"/>
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
-			<property name="javax.persistence.jdbc.url" value="jdbc:mysql:https://www.sql10.freemysqlhosting.net:3306/sql10208877"/>
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://www.sql10.freemysqlhosting.net:3306/sql10208877"/>
 			<property name="javax.persistence.jdbc.user" value="sql10208877"/>
 			<property name="javax.persistence.jdbc.password" value="easupM8rTG"/>          	
           </properties>
