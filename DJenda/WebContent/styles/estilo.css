@@ -1,0 +1,85 @@
+@CHARSET "ISO-8859-1";
+
+body {
+	
+	background-image: url("../images/folha.jpg");
+	color: blue;
+	font-family: cursive;
+	font-size: large;
+	margin-left: 100px;
+	margin-right: 50px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	
+	
+}
+
+.label {
+	font-family: cursive;
+	
+}
+
+h1 {
+	
+	text-align: center;
+		
+}
+
+#header {
+	
+	color: red;
+	
+}
+
+.text-input {
+	
+	background-color: transparent;
+	color: black;
+	font-family: cursive;
+	font-size: medium;
+	margin-bottom: 25px;
+	margin-top: 15px;
+	margin-left: 5px;
+	
+}
+
+.button {
+	
+	background-color: yellow;
+	color: red;
+	font-family: cursive;
+	font-size: medium;
+	border-style: hidden;
+	margin-bottom: 25px;
+	
+}
+
+.buttonMenu {
+	
+	size: 500px;
+	width: 175px;
+	height: 75px;
+	background-color: yellow;
+	color: red;
+	font-family: cursive;
+	font-size: larger;
+	border-style: hidden;
+	margin: 25px;
+	border-bottom: medium;
+	border-right: medium; 
+	border-bottom-color: black;
+	border-right-color: black; 
+	
+}
+
+.calendarClass input {
+	
+	background-color: transparent;
+	color: black;
+	font-family: cursive;
+	font-size: medium;
+	margin-bottom: 25px;
+	margin-top: 15px;
+	margin-left: 5px;
+	
+}

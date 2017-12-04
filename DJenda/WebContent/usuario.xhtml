@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+	
+<h:head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<title>Cadastro de Usuário</title>
+	<link type="text/css" rel="stylesheet" href="styles/estilo.css"/>
+</h:head>
+
+<h:body>
+
+<div id="header">
+	<h1>Cadastro de Usuário</h1>
+</div>
+
+<div id="content">
+	
+	<h:form>
+	
+		<h:panelGrid columns="2">
+	
+			<p:outputLabel value="E-mail" styleClass="label"/>
+			<p:inputText value="#{mbUsuario.ultUsr.email}" styleClass="text-input" maxlength="50"/>
+			
+			<p:outputLabel value="Nome" styleClass="label"/>
+			<p:inputText value="#{MBUsuario.ultUsr.nome}" styleClass="text-input" maxlength="50"/>
+			
+			<p:outputLabel value="Senha" styleClass="label"/>
+			<p:inputText value="#{mbUsuario.ultUsr.senha}" styleClass="text-input" maxlength="50" />
+			
+			<p:outputLabel value="Data de Nascimento" styleClass="label"/>
+			<p:calendar value="#{mbUsuario.ultUsr.dataNascimento}"
+					pattern="dd/MM/yyyy"
+					mode="popup"
+					showOn="button"
+					styleClass="calendarClass"
+					required="true"/>
+			
+			<p:outputLabel value="Username" styleClass="label"/>
+			<p:inputText value="#{mbUsuario.ultUsr.nick}" styleClass="text-input" maxlength="50"/>
+			
+			<p:outputLabel value="Dica de Senha" styleClass="label"/>
+			<p:inputText value="#{mbUsuario.ultUsr.fraseDeDica}" styleClass="text-input" maxlength="50"/>
+			
+		</h:panelGrid>
+		
+		<h:panelGrid columns="2">
+			
+			<h:button value="Salvar" styleClass="button"
+							actionListener="#{mbUsuario.adicionar()}"/>
+			<h:button value="Deletar Conta" styleClass="button" action="#{mbUsuario.excluir()}"/>
+			
+		</h:panelGrid>
+	
+	</h:form>
+
+</div>
+	
+<div id="footer">
+		
+</div>
+	
+</h:body>
+
+</html>

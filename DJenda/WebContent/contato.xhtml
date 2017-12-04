@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+		xmlns:h="http://java.sun.com/jsf/html"
+		xmlns:f="http://java.sun.com/jsf/core"
+		xmlns:p="http://primefaces.org/ui">
+
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<title>Cadastro de Contato</title>
+	<link type="text/css" rel="stylesheet" href="styles/estilo.css"/>
+
+</head>
+
+<body>
+
+<div id="header">
+	<h1>Cadastro de Contato</h1>
+</div>
+
+<div id="content">
+	
+	<h:form>
+	
+		<p:panelGrid columns="2">
+	
+			<p:outputLabel value="Nome" styleClass="label"/>
+			<p:inputText value="#{mbContato.ultCont.nome}" styleClass="text-input" maxlength="50"/>
+			
+			<p:outputLabel value="Tipo de Contato" styleClass="label"/>
+			<p:inputText value="#{mbContato.ultCont.tipoContato}" styleClass="text-input" maxlength="50"/>
+			
+			<p:outputLabel value="Onde Conheci" styleClass="label"/>
+			<p:inputText value="#{mbContato.ultCont.ondeConheci}" styleClass="text-input" maxlength="50"/>
+			
+			<p:outputLabel value="Organização" styleClass="label"/>
+			<p:inputText value="#{mbContato.ultCont.organizacao}" styleClass="text-input" maxlength="50"/>
+			
+			<p:outputLabel value="Data de Nascimento" styleClass="label"/>
+			<p:calendar value="#{mbContato.ultCont.dataNascimento}"
+					pattern="dd/MM/yyyy"
+					mode="popup"
+					showOn="button"
+					styleClass="calendarClass"
+					required="true"/>
+			
+			<p:outputLabel value="E-mail" styleClass="label"/>
+			<p:inputText value="#{mbContato.ultCont.email}" styleClass="text-input" maxlength="50"/>
+			
+			<p:outputLabel value="Telefone" styleClass="label"/>
+			<p:inputText value="#{mbContato.ultCont.telefone}" styleClass="text-input" maxlength="50"/>
+			
+		</p:panelGrid>
+		
+		<p:panelGrid columns="2">
+			
+			<p:button value="Adicionar" action="#{mbContato.adicionar()}" styleClass="button"/>
+			<p:button value="Alterar" action="#{mbContato.alterar()}" styleClass="button"/>
+			<p:button value="Consultar" action="#{mbContato.consultar()}" styleClass="button"/>
+			<p:button value="Deletar" action="#{mbContato.excluir()}" styleClass="button"/>
+			<p:button value="Todos os Registros" action="#{mbContato.relatorioTodos()}" styleClass="button"/>
+			<p:button value="Gerar PDF/TXT" action="#{mbContato.relatorioTodos()}" styleClass="button"/>
+			
+		</p:panelGrid>
+	
+	</h:form>
+	
+</div>
+	
+	
+<div id="footer">
+		
+</div>
+	
+</body>
+
+</html>

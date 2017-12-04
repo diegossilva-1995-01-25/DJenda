@@ -1,0 +1,13 @@
+Anotações Agenda Web:
+
+Manter Compromissos, Lugares e Pessoas;
+O compromisso tem uma lista de pessoas
+e um lugar, além de um nome;
+Interface semelhante a um caderno de
+agenda;
+Nome do programa: DJenda;
+Java, ManagedBeans, JSF, HTML e CSS;
+Notificações por e-mail;
+Login: email e senha em BD;
+Logo, Manter Logins;
+Usar Bluemix;
