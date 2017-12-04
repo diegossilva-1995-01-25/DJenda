@@ -18,11 +18,12 @@ public class Compromisso extends Entidade implements Serializable {
 	private int idUsuario;
 	@Id
 	private int idCompromisso;
-	private String descricao;
+	private String nome;
+	private String descricaoCompromisso;
 	private Date dataCompromisso = new Date();
-	private String hora;
-	private Date dataNotificacao = new Date();
-	private String mensagem;
+	private String horaCompromisso;
+	private Date dataNotificacaoCompromisso = new Date();
+	private String mensagemCompromisso;
 	private Lugar lugar;
 	private Contato contato;
 	
@@ -38,48 +39,48 @@ public class Compromisso extends Entidade implements Serializable {
 		return idCompromisso;
 	}
 	
-	public String getDescricao() {
-		return descricao;
+	public String getDescricaoCompromisso() {
+		return descricaoCompromisso;
 	}
 	
 	public Date getDataCompromisso() {
 		return dataCompromisso;
 	}
 	
-	public String getHora() {
-		return hora;
+	public String getHoraCompromisso() {
+		return horaCompromisso;
 	}
 	
-	public Date getDataNotificacao() {
-		return dataNotificacao;
+	public Date getDataNotificacaoCompromisso() {
+		return dataNotificacaoCompromisso;
 	}
 	
-	public String getMensagem() {
-		return mensagem;
+	public String getMensagemCompromisso() {
+		return mensagemCompromisso;
 	}
 	
 	public void setIdCompromisso(int idCompromisso) {
 		this.idCompromisso = idCompromisso;
 	}
 	
-	public void setDescricao(String descricao) {
-		this.descricao = descricao;
+	public void setDescricaoCompromisso(String descricaoCompromisso) {
+		this.descricaoCompromisso = descricaoCompromisso;
 	}
 	
 	public void setDataCompromisso(Date dataCompromisso) {
 		this.dataCompromisso = dataCompromisso;
 	}
 	
-	public void setHora(String hora) {
-		this.hora = hora;
+	public void setHoraCompromisso(String horaCompromisso) {
+		this.horaCompromisso = horaCompromisso;
 	}
 	
-	public void setDataNotificacao(Date dataNotificacao) {
-		this.dataNotificacao = dataNotificacao;
+	public void setDataNotificacaoCompromisso(Date dataNotificacaoCompromisso) {
+		this.dataNotificacaoCompromisso = dataNotificacaoCompromisso;
 	}
 	
-	public void setMensagem(String mensagem) {
-		this.mensagem = mensagem;
+	public void setMensagemCompromisso(String mensagemCompromisso) {
+		this.mensagemCompromisso = mensagemCompromisso;
 	}
 
 	public Lugar getLugar() {
@@ -96,6 +97,14 @@ public class Compromisso extends Entidade implements Serializable {
 
 	public void setContato(Contato contato) {
 		this.contato = contato;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 	
 	

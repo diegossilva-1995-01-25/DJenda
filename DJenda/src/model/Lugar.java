@@ -16,11 +16,12 @@ public class Lugar extends Entidade implements Serializable {
 	private int idUsuario;
 	@Id
 	private int idLugar;
-	private String endereco;
-	private String bairro;
-	private String cidade;
+	private String nome;
+	private String enderecoLugar;
+	private String bairroLugar;
+	private String cidadeLugar;
 	private String tipoLugar;
-	private String descricao;
+	private String descricaoLugar;
 	
 	public int getIdUsuario() {
 		return idUsuario;
@@ -34,48 +35,56 @@ public class Lugar extends Entidade implements Serializable {
 		return idLugar;
 	}
 	
-	public String getEndereco() {
-		return endereco;
+	public String getEnderecoLugar() {
+		return enderecoLugar;
 	}
 	
-	public String getBairro() {
-		return bairro;
+	public String getBairroLugar() {
+		return bairroLugar;
 	}
 	
-	public String getCidade() {
-		return cidade;
+	public String getCidadeLugar() {
+		return cidadeLugar;
 	}
 	
 	public String getTipoLugar() {
 		return tipoLugar;
 	}
 	
-	public String getDescricao() {
-		return descricao;
+	public String getDescricaoLugar() {
+		return descricaoLugar;
 	}
 	
 	public void setIdLugar(int idLugar) {
 		this.idLugar = idLugar;
 	}
 	
-	public void setEndereco(String endereco) {
-		this.endereco = endereco;
+	public void setEnderecoLugar(String enderecoLugar) {
+		this.enderecoLugar = enderecoLugar;
 	}
 	
-	public void setBairro(String bairro) {
-		this.bairro = bairro;
+	public void setBairroLugar(String bairroLugar) {
+		this.bairroLugar = bairroLugar;
 	}
 	
-	public void setCidade(String cidade) {
-		this.cidade = cidade;
+	public void setCidadeLugar(String cidadeLugar) {
+		this.cidadeLugar = cidadeLugar;
 	}
 	
 	public void setTipoLugar(String tipoLugar) {
 		this.tipoLugar = tipoLugar;
 	}
 	
-	public void setDescricao(String descricao) {
-		this.descricao = descricao;
+	public void setDescricaoLugar(String descricaoLugar) {
+		this.descricaoLugar = descricaoLugar;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 	
 	

@@ -41,7 +41,7 @@ public class MBUsuario extends MBGenerico implements Serializable {
 	public void setListaUsr(List<Usuario> listaUsr) {
 		this.listaUsr = listaUsr;
 	}
-
+		
 	@Override
 	public String adicionar() {
 		// TODO Auto-generated method stub
@@ -104,9 +104,9 @@ public class MBUsuario extends MBGenerico implements Serializable {
 		Usuario usr = null;
 		boolean logado = false;
 		
-		usr = cUsr.login(ultUsr.getEmail());
+		usr = cUsr.login(ultUsr.getEmailUsuario());
 		
-		if(usr.getSenha().equals(ultUsr.getSenha())) {
+		if(usr.getSenhaUsuario().equals(ultUsr.getSenhaUsuario())) {
 			
 			logado = true;
 			

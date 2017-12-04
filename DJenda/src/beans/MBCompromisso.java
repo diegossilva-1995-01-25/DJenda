@@ -41,7 +41,6 @@ public class MBCompromisso extends MBGenerico implements Serializable {
 	public void setListaComp(List<Compromisso> listaComp) {
 		this.listaComp = listaComp;
 	}
-	
 
 	@Override
 	public String adicionar() {

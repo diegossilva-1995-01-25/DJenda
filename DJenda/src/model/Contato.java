@@ -17,12 +17,13 @@ public class Contato extends Entidade implements Serializable {
 	private int idUsuario;
 	@Id
 	private int idContato;
+	private String nome;
 	private String tipoContato;
-	private String ondeConheci;
-	private String organizacao;
-	private Date dataNascimento;
-	private String email;
-	private String telefone;
+	private String ondeConheciContato;
+	private String organizacaoContato;
+	private Date dataNascimentoContato;
+	private String emailContato;
+	private String telefoneContato;
 	
 	public int getIdUsuario() {
 		return idUsuario;
@@ -40,24 +41,24 @@ public class Contato extends Entidade implements Serializable {
 		return tipoContato;
 	}
 	
-	public String getOndeConheci() {
-		return ondeConheci;
+	public String getOndeConheciContato() {
+		return ondeConheciContato;
 	}
 	
-	public String getOrganizacao() {
-		return organizacao;
+	public String getOrganizacaoContato() {
+		return organizacaoContato;
 	}
 	
-	public Date getDataNascimento() {
-		return dataNascimento;
+	public Date getDataNascimentoContato() {
+		return dataNascimentoContato;
 	}
 	
-	public String getEmail() {
-		return email;
+	public String getEmailContato() {
+		return emailContato;
 	}
 	
-	public String getTelefone() {
-		return telefone;
+	public String getTelefoneContato() {
+		return telefoneContato;
 	}
 	
 	public void setIdContato(int idContato) {
@@ -68,24 +69,32 @@ public class Contato extends Entidade implements Serializable {
 		this.tipoContato = tipoContato;
 	}
 	
-	public void setOndeConheci(String ondeConheci) {
-		this.ondeConheci = ondeConheci;
+	public void setOndeConheciContato(String ondeConheciContato) {
+		this.ondeConheciContato = ondeConheciContato;
 	}
 	
-	public void setOrganizacao(String organizacao) {
-		this.organizacao = organizacao;
+	public void setOrganizacaoContato(String organizacaoContato) {
+		this.organizacaoContato = organizacaoContato;
 	}
 	
-	public void setDataNascimento(Date dataNascimento) {
-		this.dataNascimento = dataNascimento;
+	public void setDataNascimentoContato(Date dataNascimentoContato) {
+		this.dataNascimentoContato = dataNascimentoContato;
 	}
 	
-	public void setEmail(String email) {
-		this.email = email;
+	public void setEmailContato(String emailContato) {
+		this.emailContato = emailContato;
 	}
 	
-	public void setTelefone(String telefone) {
-		this.telefone = telefone;
+	public void setTelefoneContato(String telefoneContato) {
+		this.telefoneContato = telefoneContato;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 	
 	

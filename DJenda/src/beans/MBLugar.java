@@ -41,7 +41,7 @@ public class MBLugar extends MBGenerico implements Serializable {
 	public void setListaLug(List<Lugar> listaLug) {
 		this.listaLug = listaLug;
 	}
-
+		
 	@Override
 	public String adicionar() {
 		// TODO Auto-generated method stub

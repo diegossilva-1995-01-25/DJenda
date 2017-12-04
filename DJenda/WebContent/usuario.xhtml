@@ -25,16 +25,16 @@
 		<h:panelGrid columns="2">
 	
 			<p:outputLabel value="E-mail" styleClass="label"/>
-			<p:inputText value="#{mbUsuario.ultUsr.email}" styleClass="text-input" maxlength="50"/>
+			<p:inputText value="#{mbUsuario.ultUsr.emailUsuario}" styleClass="text-input" maxlength="50"/>
 			
 			<p:outputLabel value="Nome" styleClass="label"/>
-			<p:inputText value="#{MBUsuario.ultUsr.nome}" styleClass="text-input" maxlength="50"/>
+			<p:inputText value="#{mbUsuario.ultUsr.nome}" styleClass="text-input" maxlength="50"/>
 			
 			<p:outputLabel value="Senha" styleClass="label"/>
-			<p:inputText value="#{mbUsuario.ultUsr.senha}" styleClass="text-input" maxlength="50" />
+			<p:inputText value="#{mbUsuario.ultUsr.senhaUsuario}" styleClass="text-input" maxlength="50" />
 			
 			<p:outputLabel value="Data de Nascimento" styleClass="label"/>
-			<p:calendar value="#{mbUsuario.ultUsr.dataNascimento}"
+			<p:calendar value="#{mbUsuario.ultUsr.dataNascimentoUsuario}"
 					pattern="dd/MM/yyyy"
 					mode="popup"
 					showOn="button"
@@ -42,17 +42,17 @@
 					required="true"/>
 			
 			<p:outputLabel value="Username" styleClass="label"/>
-			<p:inputText value="#{mbUsuario.ultUsr.nick}" styleClass="text-input" maxlength="50"/>
+			<p:inputText value="#{mbUsuario.ultUsr.nickUsuario}" styleClass="text-input" maxlength="50"/>
 			
 			<p:outputLabel value="Dica de Senha" styleClass="label"/>
-			<p:inputText value="#{mbUsuario.ultUsr.fraseDeDica}" styleClass="text-input" maxlength="50"/>
+			<p:inputText value="#{mbUsuario.ultUsr.fraseDeDicaUsuario}" styleClass="text-input" maxlength="50"/>
 			
 		</h:panelGrid>
 		
 		<h:panelGrid columns="2">
 			
 			<h:button value="Salvar" styleClass="button"
-							actionListener="#{mbUsuario.adicionar()}"/>
+							action="#{mbUsuario.adicionar}"/>
 			<h:button value="Deletar Conta" styleClass="button" action="#{mbUsuario.excluir()}"/>
 			
 		</h:panelGrid>

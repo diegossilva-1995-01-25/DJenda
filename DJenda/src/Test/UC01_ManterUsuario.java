@@ -21,12 +21,12 @@ public class UC01_ManterUsuario {
 		ctU = new CtrlUsuario();
 		u = new Usuario();
 		
-		u.setEmail("diego@gmail.com");
+		u.setEmailUsuario("diego@gmail.com");
 		u.setNome("Diego");
-		u.setSenha("123");
-		u.setDataNascimento("25/01/1995");
-		u.setNick("d");
-		u.setFraseDeDica("123");
+		u.setSenhaUsuario("123");
+		u.setDataNascimentoUsuario("1995-01-25");
+		u.setNickUsuario("d");
+		u.setFraseDeDicaUsuario("123");
 		
 	}
 

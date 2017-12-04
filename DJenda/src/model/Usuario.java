@@ -15,58 +15,67 @@ public class Usuario extends Entidade implements Serializable {
 
 	@Id
 	private int idUsuario;
-	private String email;
-	private String senha;
-	private String dataNascimento;
-	private String nick;
-	private String fraseDeDica;
+	private String emailUsuario;
+	private String nome;
+	private String senhaUsuario;
+	private String dataNascimentoUsuario;
+	private String nickUsuario;
+	private String fraseDeDicaUsuario;
 	
 	public int getIdUsuario() {
 		return idUsuario;
 	}
 	
-	public String getEmail() {
-		return email;
+	public String getEmailUsuario() {
+		return emailUsuario;
 	}
 	
-	public String getSenha() {
-		return senha;
+	public String getSenhaUsuario() {
+		return senhaUsuario;
 	}
 	
-	public String getDataNascimento() {
-		return dataNascimento;
+	public String getDataNascimentoUsuario() {
+		return dataNascimentoUsuario;
 	}
 	
-	public String getNick() {
-		return nick;
+	public String getNickUsuario() {
+		return nickUsuario;
 	}
 	
-	public String getFraseDeDica() {
-		return fraseDeDica;
+	public String getFraseDeDicaUsuario() {
+		return fraseDeDicaUsuario;
 	}
 	
 	public void setIdUsuario(int idUsuario) {
 		this.idUsuario = idUsuario;
 	}
 	
-	public void setEmail(String email) {
-		this.email = email;
+	public void setEmailUsuario(String emailUsuario) {
+		this.emailUsuario = emailUsuario;
 	}
 	
-	public void setSenha(String senha) {
-		this.senha = senha;
+	public void setSenhaUsuario(String senhaUsuario) {
+		this.senhaUsuario = senhaUsuario;
 	}
 	
-	public void setDataNascimento(String dataNascimento) {
-		this.dataNascimento = dataNascimento;
+	public void setDataNascimentoUsuario(String dataNascimentoUsuario) {
+		this.dataNascimentoUsuario = dataNascimentoUsuario;
 	}
 	
-	public void setNick(String nick) {
-		this.nick = nick;
+	public void setNickUsuario(String nickUsuario) {
+		this.nickUsuario = nickUsuario;
 	}
 	
-	public void setFraseDeDica(String fraseDeDica) {
-		this.fraseDeDica = fraseDeDica;
+	public void setFraseDeDicaUsuario(String fraseDeDicaUsuario) {
+		this.fraseDeDicaUsuario = fraseDeDicaUsuario;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 	
 	

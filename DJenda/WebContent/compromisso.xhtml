@@ -30,7 +30,7 @@
 			<p:inputText value="#{mbCompromisso.ultComp.nome}" styleClass="text-input" maxlength="50"/>
 			
 			<p:outputLabel value="Descrição" styleClass="label"/>
-			<p:inputTextarea value="#{mbCompromisso.ultComp.descricao}" styleClass="text-input"
+			<p:inputTextarea value="#{mbCompromisso.ultComp.descricaoCompromisso}" styleClass="text-input"
 							cols="50" rows="5"/>
 			
 			<p:outputLabel value="Data do Compromisso" styleClass="label"/>
@@ -42,7 +42,7 @@
 					required="true"/>
 					
 			<p:outputLabel value="Hora" styleClass="label"/>
-			<p:inputText value="#{mbCompromisso.ultComp.hora}"  styleClass="text-input" maxlength="5"/>
+			<p:inputText value="#{mbCompromisso.ultComp.horaCompromisso}"  styleClass="text-input" maxlength="5"/>
 			
 			<p:outputLabel value="Com quem?" styleClass="label"/>
 			<p:inputText value="#{mbCompromisso.ultComp.contato.idContato}" styleClass="text-input" maxlength="50"/>
@@ -51,7 +51,7 @@
 			<p:inputText value="#{mbCompromisso.ultComp.lugar.idLugar}" styleClass="text-input" maxlength="50"/>
 			
 			<p:outputLabel value="Data da Notificação" styleClass="label"/>
-			<p:calendar value="#{mbCompromisso.ultComp.dataNotificacao}"
+			<p:calendar value="#{mbCompromisso.ultComp.dataNotificacaoCompromisso}"
 					pattern="dd/MM/yyyy"
 					mode="popup"
 					showOn="button"
@@ -59,7 +59,7 @@
 					required="true"/>
 			
 			<p:outputLabel value="Mensagem" styleClass="label"/>
-			<p:inputText value="#{mbCompromisso.ultComp.mensagem}"  styleClass="text-input" maxlength="50"/>
+			<p:inputText value="#{mbCompromisso.ultComp.mensagemCompromisso}"  styleClass="text-input" maxlength="50"/>
 			
 		</p:panelGrid>
 		
