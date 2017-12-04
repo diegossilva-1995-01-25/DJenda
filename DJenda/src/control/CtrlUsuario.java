@@ -30,7 +30,7 @@ public class CtrlUsuario implements FabricaCRUD<Usuario> {
 				
 		try {
 			gerente.getTransaction().begin();
-			gerente.merge(entidade);
+			gerente.persist(entidade);
 			gerente.getTransaction().commit();
 		} catch (Exception e) {
 			e.printStackTrace();

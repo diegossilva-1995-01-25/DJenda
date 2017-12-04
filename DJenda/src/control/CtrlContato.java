@@ -28,9 +28,16 @@ public class CtrlContato implements FabricaCRUD<Contato> {
 		// TODO Auto-generated method stub
 		
 		EntityManager gerente = fab.createEntityManager();
-		gerente.getTransaction().begin();
-		gerente.persist(entidade);
-		gerente.getTransaction().commit();
+		
+		try {
+			gerente.getTransaction().begin();
+			gerente.persist(entidade);
+			gerente.getTransaction().commit();
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println("Erro ao salvar no banco: \n" + e.getMessage());
+		}
+		
 		gerente.close();
 
 	}

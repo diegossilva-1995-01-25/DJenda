@@ -27,7 +27,7 @@ CREATE TABLE contato (
  emailContato VARCHAR(50) NOT NULL,
  telefoneContato VARCHAR(50) NOT NULL,
  PRIMARY KEY (idContato,idUsuario,emailUsuario),
- FOREIGN KEY (idUsuario,emailUsuario) REFERENCES Usuario (idUsuario,emailUsuario)
+ FOREIGN KEY (idUsuario,emailUsuario) REFERENCES usuario (idUsuario,emailUsuario)
 );
 
 
@@ -43,7 +43,7 @@ CREATE TABLE lugar (
  tipoLugar VARCHAR(50),
  descricaoLugar VARCHAR(255),
  PRIMARY KEY (idLugar,idUsuario,emailUsuario),
- FOREIGN KEY (idUsuario,emailUsuario) REFERENCES Usuario (idUsuario,emailUsuario)
+ FOREIGN KEY (idUsuario,emailUsuario) REFERENCES usuario (idUsuario,emailUsuario)
 );
 
 
@@ -61,32 +61,42 @@ CREATE TABLE compromisso (
  dataNotificacaoCompromisso DATE NOT NULL,
  mensagemCompromisso VARCHAR(255),
  PRIMARY KEY (idCompromisso,idUsuario,emailUsuario,idContato,idLugar),
- FOREIGN KEY (idUsuario,emailUsuario) REFERENCES Usuario (idUsuario,emailUsuario),
- FOREIGN KEY (idContato) REFERENCES Contato (idContato),
- FOREIGN KEY (idLugar) REFERENCES Lugar (idLugar)
+ FOREIGN KEY (idUsuario,emailUsuario) REFERENCES usuario (idUsuario,emailUsuario),
+ FOREIGN KEY (idContato) REFERENCES contato (idContato),
+ FOREIGN KEY (idLugar) REFERENCES lugar (idLugar)
 );
 
 
 ALTER TABLE `djenda`.`usuario` 
-ADD UNIQUE INDEX `idUsuario_UNIQUE` (`idUsuario` ASC),
-ADD UNIQUE INDEX `emailUsuario_UNIQUE` (`emailUsuario` ASC);
+ADD UNIQUE INDEX `usuario_UNIQUE` (`idUsuario` ASC, `emailUsuario` ASC);
 
 
 ALTER TABLE `djenda`.`lugar` 
-ADD UNIQUE INDEX `idLugar_UNIQUE` (`idLugar` ASC),
-ADD UNIQUE INDEX `idUsuario_UNIQUE` (`idUsuario` ASC),
-ADD UNIQUE INDEX `emailUsuario_UNIQUE` (`emailUsuario` ASC);
+ADD UNIQUE INDEX `lugar_UNIQUE` (`idLugar` ASC, `idUsuario` ASC, `emailUsuario` ASC);
 
 
 ALTER TABLE `djenda`.`contato` 
-ADD UNIQUE INDEX `idContato_UNIQUE` (`idContato` ASC),
-ADD UNIQUE INDEX `idUsuario_UNIQUE` (`idUsuario` ASC),
-ADD UNIQUE INDEX `emailUsuario_UNIQUE` (`emailUsuario` ASC);
+ADD UNIQUE INDEX `contato_UNIQUE` (`idContato` ASC, `idUsuario` ASC, `emailUsuario` ASC);
 
 
 ALTER TABLE `djenda`.`compromisso` 
-ADD UNIQUE INDEX `idCompromisso_UNIQUE` (`idCompromisso` ASC),
-ADD UNIQUE INDEX `idUsuario_UNIQUE` (`idUsuario` ASC),
-ADD UNIQUE INDEX `emailUsuario_UNIQUE` (`emailUsuario` ASC),
-ADD UNIQUE INDEX `idContato_UNIQUE` (`idContato` ASC),
-ADD UNIQUE INDEX `idLugar_UNIQUE` (`idLugar` ASC);
+ADD UNIQUE INDEX `compromisso_UNIQUE` (`idCompromisso` ASC, `idUsuario` ASC,
+                `emailUsuario` ASC, `idContato` ASC, `idLugar` ASC);
+                
+
+
+ALTER TABLE `sql10208877`.`usuario` 
+ADD UNIQUE INDEX `usuario_UNIQUE` (`idUsuario` ASC, `emailUsuario` ASC);
+
+
+ALTER TABLE `sql10208877`.`lugar` 
+ADD UNIQUE INDEX `lugar_UNIQUE` (`idLugar` ASC, `idUsuario` ASC, `emailUsuario` ASC);
+
+
+ALTER TABLE `sql10208877`.`contato` 
+ADD UNIQUE INDEX `contato_UNIQUE` (`idContato` ASC, `idUsuario` ASC, `emailUsuario` ASC);
+
+
+ALTER TABLE `sql10208877`.`compromisso` 
+ADD UNIQUE INDEX `compromisso_UNIQUE` (`idCompromisso` ASC, `idUsuario` ASC,
+                `emailUsuario` ASC, `idContato` ASC, `idLugar` ASC);
