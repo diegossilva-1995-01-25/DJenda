@@ -5,11 +5,11 @@ use djenda;
 CREATE TABLE usuario (
  idUsuario INT NOT NULL AUTO_INCREMENT,
  emailUsuario VARCHAR(50) NOT NULL,
- nomeUsuario VARCHAR(50) NOT NULL,
+ nome VARCHAR(50) NOT NULL,
  senhaUsuario VARCHAR(25) NOT NULL,
  dataNascimentoUsuario DATE NOT NULL,
  nickUsuario VARCHAR(50),
- fraseDicaUsuario VARCHAR(50),
+ fraseDeDicaUsuario VARCHAR(50),
  PRIMARY KEY (idUsuario,emailUsuario)
 );
 
@@ -19,7 +19,7 @@ CREATE TABLE contato (
  idContato INT NOT NULL AUTO_INCREMENT,
  idUsuario INT NOT NULL,
  emailUsuario VARCHAR(50) NOT NULL,
- nomeContato VARCHAR(50) NOT NULL,
+ nome VARCHAR(50) NOT NULL,
  tipoContato VARCHAR(50) ,
  ondeConheciContato VARCHAR(50),
  organizacaoContato VARCHAR(50),
@@ -36,7 +36,7 @@ CREATE TABLE lugar (
  idLugar INT NOT NULL AUTO_INCREMENT,
  idUsuario INT NOT NULL,
  emailUsuario VARCHAR(50) NOT NULL,
- nomeLugar VARCHAR(50) NOT NULL,
+ nome VARCHAR(50) NOT NULL,
  enderecoLugar VARCHAR(100) NOT NULL,
  bairroLugar VARCHAR(50) NOT NULL,
  cidadeLugar VARCHAR(50) NOT NULL,
@@ -54,7 +54,7 @@ CREATE TABLE compromisso (
  emailUsuario VARCHAR(50) NOT NULL,
  idContato INT NOT NULL,
  idLugar INT NOT NULL,
- nomeCompromisso VARCHAR(50) NOT NULL,
+ nome VARCHAR(50) NOT NULL,
  descricaoCompromisso VARCHAR(100),
  dataCompromisso DATE NOT NULL,
  horaCompromisso VARCHAR(5) NOT NULL,
@@ -100,3 +100,31 @@ ADD UNIQUE INDEX `contato_UNIQUE` (`idContato` ASC, `idUsuario` ASC, `emailUsuar
 ALTER TABLE `sql10208877`.`compromisso` 
 ADD UNIQUE INDEX `compromisso_UNIQUE` (`idCompromisso` ASC, `idUsuario` ASC,
                 `emailUsuario` ASC, `idContato` ASC, `idLugar` ASC);
+                
+
+                
+ALTER TABLE `djenda`.`usuario` 
+CHANGE COLUMN `nomeUsuario` `nome` VARCHAR(50) NOT NULL ;
+                
+ALTER TABLE `djenda`.`lugar` 
+CHANGE COLUMN `nomeLugar` `nome` VARCHAR(50) NOT NULL ;
+                      
+ALTER TABLE `djenda`.`contato` 
+CHANGE COLUMN `nomeContato` `nome` VARCHAR(50) NOT NULL ;
+                
+ALTER TABLE `djenda`.`compromisso` 
+CHANGE COLUMN `nomeCompromisso` `nome` VARCHAR(50) NOT NULL ;
+
+
+
+ALTER TABLE `sql10208877`.`usuario` 
+CHANGE COLUMN `nomeUsuario` `nome` VARCHAR(50) NOT NULL ;
+                
+ALTER TABLE `sql10208877`.`lugar` 
+CHANGE COLUMN `nomeLugar` `nome` VARCHAR(50) NOT NULL ;
+                      
+ALTER TABLE `sql10208877`.`contato` 
+CHANGE COLUMN `nomeContato` `nome` VARCHAR(50) NOT NULL ;
+                
+ALTER TABLE `sql10208877`.`compromisso` 
+CHANGE COLUMN `nomeCompromisso` `nome` VARCHAR(50) NOT NULL ;
