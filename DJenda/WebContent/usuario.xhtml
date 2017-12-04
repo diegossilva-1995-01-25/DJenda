@@ -52,8 +52,9 @@
 		<h:panelGrid columns="2">
 			
 			<h:button value="Salvar" styleClass="button"
-							action="#{mbUsuario.adicionar}"/>
-			<h:button value="Deletar Conta" styleClass="button" action="#{mbUsuario.excluir()}"/>
+							action="#{mbUsuario.adicionar}" outcome="menu.xhtml"/>
+			<h:button value="Deletar Conta" styleClass="button" action="#{mbUsuario.excluir()}"
+							outcome="login.xhtml"/>
 			
 		</h:panelGrid>
 	
