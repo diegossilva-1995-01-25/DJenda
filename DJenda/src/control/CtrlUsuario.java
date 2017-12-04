@@ -33,7 +33,7 @@ public class CtrlUsuario implements FabricaCRUD<Usuario> {
 			gerente.merge(entidade);
 			gerente.getTransaction().commit();
 		} catch (Exception e) {
-			gerente.getTransaction().rollback();
+			e.printStackTrace();
 			System.out.println("Erro ao salvar no banco: \n" + e.getMessage());
 		}
 		
