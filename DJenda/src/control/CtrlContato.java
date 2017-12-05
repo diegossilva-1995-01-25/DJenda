@@ -19,7 +19,7 @@ public class CtrlContato implements FabricaCRUD<Contato> {
 
 	public CtrlContato() {
 		// TODO Auto-generated constructor stub
-		fab = Persistence.createEntityManagerFactory("contato");
+		fab = Persistence.createEntityManagerFactory("sql10208877");
 		//cont = new Contato();
 	}
 

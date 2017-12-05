@@ -18,7 +18,7 @@ public class CtrlUsuario implements FabricaCRUD<Usuario> {
 	
 	public CtrlUsuario() {
 		// TODO Auto-generated constructor stub
-		fab = Persistence.createEntityManagerFactory("usuario");
+		fab = Persistence.createEntityManagerFactory("sql10208877");
 		//usr = new Usuario();
 	}
 

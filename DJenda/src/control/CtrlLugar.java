@@ -18,7 +18,7 @@ public class CtrlLugar implements FabricaCRUD<Lugar> {
 	
 	public CtrlLugar() {
 		// TODO Auto-generated constructor stub
-		fab = Persistence.createEntityManagerFactory("lugar");
+		fab = Persistence.createEntityManagerFactory("sql10208877");
 		//lug = new Lugar();
 	}
 

@@ -18,7 +18,7 @@ public class CtrlCompromisso implements FabricaCRUD<Compromisso> {
 
 	public CtrlCompromisso() {
 		
-		fab = Persistence.createEntityManagerFactory("compromisso");
+		fab = Persistence.createEntityManagerFactory("sql10208877");
 		//comp = new Compromisso();
 		
 	}
