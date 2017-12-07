@@ -14,12 +14,12 @@ import services.FabricaCRUD;
 public class CtrlCompromisso implements FabricaCRUD<Compromisso> {
 	
 	private EntityManagerFactory fab;
-	//private Compromisso comp;
+	private Compromisso comp;
 
 	public CtrlCompromisso() {
 		
 		fab = Persistence.createEntityManagerFactory("sql10208877");
-		//comp = new Compromisso();
+		comp = new Compromisso();
 		
 	}
 	

@@ -14,12 +14,12 @@ import services.FabricaCRUD;
 public class CtrlLugar implements FabricaCRUD<Lugar> {
 	
 	private EntityManagerFactory fab;
-	//private Lugar lug;
+	private Lugar lug;
 	
 	public CtrlLugar() {
 		// TODO Auto-generated constructor stub
 		fab = Persistence.createEntityManagerFactory("sql10208877");
-		//lug = new Lugar();
+		lug = new Lugar();
 	}
 
 	@Override

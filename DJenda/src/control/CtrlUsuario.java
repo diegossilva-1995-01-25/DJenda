@@ -14,12 +14,12 @@ import services.FabricaCRUD;
 public class CtrlUsuario implements FabricaCRUD<Usuario> {
 	
 	private EntityManagerFactory fab;
-	//private Usuario usr;
+	private Usuario usr;
 	
 	public CtrlUsuario() {
 		// TODO Auto-generated constructor stub
 		fab = Persistence.createEntityManagerFactory("sql10208877");
-		//usr = new Usuario();
+		usr = new Usuario();
 	}
 
 	@Override

@@ -15,12 +15,12 @@ import services.FabricaCRUD;
 public class CtrlContato implements FabricaCRUD<Contato> {
 
 	private EntityManagerFactory fab;
-	//private Contato cont;
+	private Contato cont;
 
 	public CtrlContato() {
 		// TODO Auto-generated constructor stub
 		fab = Persistence.createEntityManagerFactory("sql10208877");
-		//cont = new Contato();
+		cont = new Contato();
 	}
 
 	@Override
